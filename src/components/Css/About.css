@@ -1,0 +1,59 @@
+/* font-family : "Coiny", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Coiny&family=Knewave&family=Mogra&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+.about{
+    width: 100vw;
+    height: 100nh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    /*background-color: #ffffff;*/
+    background-color: #f8f9fa;
+    color: #695aa6;
+    flex-wrap: wrap;
+   
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 500px;
+    height: 400px;
+    margin: 40px;
+}
+.text{
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    color: #111111;
+    font-size: 18px;
+    font-weight: lighter; 
+}
+
+h1{
+    font-family : "Coiny", system-ui;
+}
+.download{
+    text-decoration: none;
+    border: #695aa6 solid 1px;
+    color: #695aa6;
+    background-color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-family : "Coiny", system-ui;
+    font-size: small;
+}
+ 
+.download:hover{
+    background-color: #695aa6;
+    color: #ffffff;
+}

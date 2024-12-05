@@ -1,0 +1,15 @@
+#footer{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100vw;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px;
+}
+.copyright{
+    color: #111111;
+    margin: auto 0;
+    padding: 10px 0;
+}

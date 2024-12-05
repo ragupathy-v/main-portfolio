@@ -1,0 +1,70 @@
+
+/* font-family : "Coiny", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Coiny&family=Knewave&family=Mogra&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+#skills{
+ width: 100vw;
+ height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-color: #f8f9fa;
+ margin-bottom: 20px;
+}
+
+.skill-head{
+    color: #695aa6;
+   
+    margin-top: 100px;
+    
+}
+.skills-div{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-left: 90px;
+    
+}
+.progessbar{
+    width: 45%;
+    margin-top:20px;
+    padding: 20px;
+   border: 1px solid #111111;
+   background-color: #f8f9fa;
+   
+   
+}
+.lable{
+    display: flex;
+    justify-content: space-between;
+    color: #695aa6;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+.percentage-tag{
+   text-align: end;
+}
+
+@media (max-width:768px){
+    .progessbar{
+        width: 90%;
+    }
+}
+
+/*bootstrap class name*/
+.progress-bar{
+    background-color: #a89bd9e6 !important;
+   
+}
+/*bootstrap class name*/
+.progress,.progress-stacked{
+    border: 1px solid #111111;
+    --bs-secondary-bg: #f8f9fa;
+}
