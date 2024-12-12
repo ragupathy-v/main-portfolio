@@ -7,7 +7,8 @@ function About() {
   return (
     <section id='about' className='about'>
           
-          <img src={photo} alt='ragupathy' xs={12} md={12}></img>
+          <img src={photo} className='profile-image' alt='ragupathy' xs={12} md={12}></img>
+          
           <div className='text'>
           <h1>About me</h1>
           <p>
@@ -18,7 +19,7 @@ function About() {
           Dedicated to clean, maintainable code and continuous learning to deliver innovative, high-quality solutions. 
           Thrives in collaborative environments and eager to contribute to impactful projects.
           </p>
-           <a className='download' href={resume} download='resume'>download resume</a>
+           <a className='download'aria-label='resume' href={resume} download='resume'>download resume</a>
            <Icons></Icons>
           </div>
 

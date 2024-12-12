@@ -3,7 +3,8 @@ import Navbars from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import { Footter } from "./components/Footter";
+import { Footer } from "./components/Footter";
+import Project from "./components/Project";
 
 
 
@@ -15,7 +16,9 @@ function App() {
   <Home/>
   <About/>
   <Skills/>
-  <Footter/>
+  <Project/>
+  <Footer/>
+  
  { /*
  <Routes>
       <Route path="" element={<Home/>}/>

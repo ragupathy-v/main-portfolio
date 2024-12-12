@@ -10,11 +10,11 @@
  align-items: center;
  flex-direction: column;
  background-color: #f8f9fa;
- margin-bottom: 20px;
+
 }
 
 .skill-head{
-    color: #695aa6;
+    color: #1300ff !important;
    
     margin-top: 100px;
     
@@ -26,45 +26,17 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    margin-left: 90px;
-    
-}
-.progessbar{
-    width: 45%;
-    margin-top:20px;
-    padding: 20px;
-   border: 1px solid #111111;
-   background-color: #f8f9fa;
-   
-   
-}
-.lable{
-    display: flex;
-    justify-content: space-between;
-    color: #695aa6;
-    font-size: 25px;
-    margin-top: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-   font-family: 'Courier New', Courier, monospace;
-}
-.percentage-tag{
-   text-align: end;
+    margin: 20px auto;
+    justify-content: space-around;
+
 }
 
-@media (max-width:768px){
-    .progessbar{
-        width: 90%;
-    }
-}
 
-/*bootstrap class name*/
-.progress-bar{
-    background-color: #a89bd9e6 !important;
-   
-}
-/*bootstrap class name*/
-.progress,.progress-stacked{
-    border: 1px solid #111111;
-    --bs-secondary-bg: #f8f9fa;
-}
+
+
+
+
+
+
+
+

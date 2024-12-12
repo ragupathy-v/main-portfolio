@@ -3,7 +3,7 @@
 
 .about{
     width: 100vw;
-    height: 100nh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,15 +19,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-img{
+.profile-image{
     width: 500px;
     height: 400px;
     margin: 40px;
+    background-color: rgb(255, 157, 0);
 }
 .text{
     width: 50%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,23 +38,38 @@ p{
     color: #111111;
     font-size: 18px;
     font-weight: lighter; 
+    letter-spacing: 2px;
 }
 
 h1{
     font-family : "Coiny", system-ui;
+    color: #1300ff !important;
+    padding: 10px;
 }
 .download{
     text-decoration: none;
-    border: #695aa6 solid 1px;
-    color: #695aa6;
+    border: #1300ff solid 1px;
+    color: #1300ff;
     background-color: #ffffff;
     padding: 5px 8px;
     border-radius: 5px;
     font-family : "Coiny", system-ui;
     font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
  
 .download:hover{
-    background-color: #695aa6;
+    background-color: #1300ff;
     color: #ffffff;
+}
+
+
+@media (max-width:425px) {
+
+   
+    .profile-image{
+        width: 300px;
+        height: 300px;
+    }
+    
 }

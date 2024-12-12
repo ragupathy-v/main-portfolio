@@ -5,10 +5,8 @@
 
 #home{
     background-image: linear-gradient(hsla(233, 38%, 91%, 0.503),#fafafa),url('/src/image/header.jpg');
-    
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover; 
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -24,15 +22,12 @@
     align-items: start;
 }
 .span-div{
+    margin-top: 40px;
    text-align: center;
-   padding-left: 180px;
+   
    
 }
-#span{
-    
-    font-family: "coiny", system-ui;
-    
-}
+
 #up{
    font-size: 57px;
    font-weight: bold;
@@ -40,7 +35,7 @@
    
 }
 #down{
- font-size: 77px; 
+ font-size: 54px; 
  font-weight: bold;
  color:#212429; 
  
@@ -48,7 +43,28 @@
 }
 #roll{
     font-size: 26px;
-    padding-right: 300px;
     font-family:"Rajdhani", sans-serif ;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
+}
+/* changing the spacing of the text on 400px and below 400px*/
+@media (max-width:400px) {
+ #roll{
+    letter-spacing: 1px;
+ }
+}
+ /*changing the size of the span text on 400px screen size and below 400px*/ 
+@media(max-width:400px){
+    #up{
+        font-size: 49px;
+    }
+    #down{
+        font-size: 48px;
+    }
+}
+
+/* changing the hight of the home screen on 400px and below*/
+@media(max-width:400px){
+    #home{
+        height: 80vh;
+    }
 }

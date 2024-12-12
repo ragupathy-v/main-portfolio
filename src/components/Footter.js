@@ -1,7 +1,7 @@
 import React from 'react'
 import './Css/footter.css'
 
-export const Footter = () => {
+export const Footer = () => {
   return (
    <>
    <footer id='footer'>

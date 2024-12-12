@@ -1,63 +1,85 @@
 
 import './Css/Skills.css'
-import ProgressBar from 'react-bootstrap/ProgressBar';
+
+//import images
+import python from '../image/python.svg'
+import react from '../image/react.svg'
+import javascript from '../image/javascript.svg'
+import django from '../image/django.svg'
+import mysql from '../image/mysql.svg'
+import html from '../image/html.svg'
+import css from '../image/css.svg'
+//mui components
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+
 
 function Skills() {
 
-  const skills = [
-    {
-      id: '1',
-      skill: 'HTML',
-      percentage: '100'
-    },
+  const image = [
+    
+  {
+    id: '1',
+    image: javascript,
+    name: 'Javascript'
+  },
     {
       id: '2',
-      skill: 'CSS',
-      percentage: '100'
+      image: react,
+      name: 'React.js'
     },
     {
-      id: '7',
-      skill: 'Javascript',
-      percentage: '80'
-    },
-    {
-      id: '8',
-      skill: 'Bootstrap',
-      percentage: '100'
-    },
-    {
-      id: '3',
-      skill: 'React.js',
-      percentage: '80'
-    },
-    {
-      id: '4',
-      skill: 'Django',
-      percentage: '80'
-    },
-    {
-      id: '5',
-      skill: 'sql',
-      percentage: '80'
-    },
-    {
-      id:'6',
-      skill:'Git and Github',
-      percentage:'60'
-    }
+    id: '3',
+    image: python,
+    name: 'Python'
+  },
+  {
+    id: '4',
+    image: django,
+    name: 'Django'
+  },
+  {
+    id: '5',
+    image: mysql,
+    name: 'Mysql'
+  },
+  {
+    id: '6',
+    image:css,
+    name: 'Css'
+  },
+  {
+    id: '7',
+    image: html,
+    name: 'Html'
+  },
+
+
   ]
   return (
     <>
       <section id='skills'>
-
-        <h1 className='skill-head'>Skills</h1>
+      <h1 className='skill-head'>Skills</h1>
         <div className='skills-div'>
-          {skills.map((skill) => (
-            <div key={skill.id} className='progessbar'>
-              <label className='lable'>{skill.skill} <span className='percentage-tag'>{skill.percentage}%</span></label>
-              <ProgressBar now={skill.percentage} variant='custom-color' />
-            </div>
+          {image.map(((image)=>
+           <Card key={image.id} sx={{ maxWidth: 345, padding: 3, margin:5, backgroundColor: '#e9ecef' }}>
+           <CardMedia
+             sx={{ height: 100, width: 112, margin: '7px' }}
+             image={image.image}
+             title="python"
+           />
+           <CardContent>
+             <Typography gutterBottom variant="h5" component="div"
+               sx={{ textAlign: 'center', color: '#111111', fontFamily: 'serif' }}
+             >
+               {image.name}
+             </Typography>
+           </CardContent>
+         </Card>
           ))}
+         
         </div>
       </section>
     </>
