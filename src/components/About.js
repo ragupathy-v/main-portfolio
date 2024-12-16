@@ -11,7 +11,7 @@ function About() {
           
           <div className='text'>
           <h1>About me</h1>
-          <p>
+          <p className='text-para'>
           Aspiring Fullstack Developer passionate about creating 
           dynamic web experiences. Proficient in front-end technologies
           like HTML, CSS, JavaScript, and React.js for building responsive interfaces.

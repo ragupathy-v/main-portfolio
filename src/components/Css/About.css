@@ -73,3 +73,11 @@ h1{
     }
     
 }
+
+@media(max-width:760px){
+    .text-para{
+        width: 80vw;
+        letter-spacing: 1px;
+    }
+    
+}

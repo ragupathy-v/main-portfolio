@@ -24,7 +24,7 @@ function Navbars() {
     
     <Navbar collapseOnSelect expand="lg" fixed="top" className={color?'nav-color':"navbars"}>
       <Container>
-        <Navbar.Brand href="#"className='m-auto'><h3 id={color?'color-name':'name'} className='m-auto fw-bold' >RAGUPTHY V</h3></Navbar.Brand>
+        <Navbar.Brand href="#"className='m-auto'><h3 id={color?'color-name':'name'} className='m-auto fw-bold' >RAGUPTHY  V</h3></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-center p-auto'>
           <Nav id='navitem'>
