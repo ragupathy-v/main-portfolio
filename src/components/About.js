@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../image/resume.pdf'
+import RAGUPATHY_V from '../image/RAGUPATHY_V.pdf'
 import photo from '../image/photo.png'
 import './Css/About.css'
 import Icons from './Icons'
@@ -19,7 +19,7 @@ function About() {
           Dedicated to clean, maintainable code and continuous learning to deliver innovative, high-quality solutions. 
           Thrives in collaborative environments and eager to contribute to impactful projects.
           </p>
-           <a className='download'aria-label='resume' href={resume} download='resume'>download resume</a>
+           <a className='download' aria-label='RESUME' href={RAGUPATHY_V} download='RAGUPATHY_V_RESUME'>download resume</a>
            <Icons></Icons>
           </div>
 
