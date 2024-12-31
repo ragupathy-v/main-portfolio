@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 import article from '../image/article.png'
 import todoimg from '../image/todoimg.png'
+import letsupgrade from '../image/letsupgade.png'
 
 function Project() {
   const projects=[
@@ -23,7 +24,14 @@ function Project() {
       content:'Developed a user-friendly to-do list application to help users manage tasks efficiently. Features include adding, editing, and deleting tasks, with a clean interface for seamless organization and productivity.',
       siteurl:'https://todos-application-react.netlify.app',
       image:todoimg
-    }
+    },
+    {
+      id:'3',
+      title:'Letsupgrade sit',
+      content:'Designed an engaging and responsive UI using React.js and Bootstrap, enhancing cross-platform compatibility by 100%. Achieved pixel-perfect design replication for the homepage and dashboard, maintaining an accuracy rate of over 95%.',
+      siteurl:'https://letsupgdrade.netlify.app/',
+      image:letsupgrade
+    },
   ]
 
 
