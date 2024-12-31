@@ -27,7 +27,7 @@ function Project() {
     },
     {
       id:'3',
-      title:'Letsupgrade sit',
+      title:'Letsupgrade app',
       content:'Designed an engaging and responsive UI using React.js and Bootstrap, enhancing cross-platform compatibility by 100%. Achieved pixel-perfect design replication for the homepage and dashboard, maintaining an accuracy rate of over 95%.',
       siteurl:'https://letsupgdrade.netlify.app/',
       image:letsupgrade
