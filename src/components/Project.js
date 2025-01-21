@@ -7,9 +7,17 @@ import Card from 'react-bootstrap/Card';
 import article from '../image/article.png'
 import todoimg from '../image/todoimg.png'
 import letsupgrade from '../image/letsupgade.png'
-
+import blog from '../image/blog.png'
 function Project() {
   const projects=[
+    {
+      id:'4',
+      title:'Blog Application',
+      content:'I developed a blog web application using Django and MySQL, enabling users to manage posts with a responsive design and secure session-based authentication. It highlights my skills in Python, Django, and MySQL.',
+      siteurl:'https://django-blog-webapp.onrender.com/',
+      image:blog
+      
+    },
     {
       id:'1',
       title:'Article summarizer',
