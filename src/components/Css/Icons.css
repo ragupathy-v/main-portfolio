@@ -1,6 +1,21 @@
-.icons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.about-socials {
+  display: flex;
+  gap: 12px;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 18px;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.social-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(200,240,96,0.06);
 }

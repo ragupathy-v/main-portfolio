@@ -1,88 +1,30 @@
-
 import './Css/Skills.css'
 
-//import images
-import python from '../image/python.svg'
-import react from '../image/react.svg'
-import javascript from '../image/javascript.svg'
-import django from '../image/django.svg'
-import mysql from '../image/mysql.svg'
-import html from '../image/html.svg'
-import css from '../image/css.svg'
-//mui components
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-
+const skills = [
+  { id: '1', icon: '🟨', name: 'JavaScript' },
+  { id: '2', icon: '⚛️',  name: 'React.js'   },
+  { id: '3', icon: '🐍', name: 'Python'      },
+  { id: '4', icon: '🎸', name: 'Django'      },
+  { id: '5', icon: '🐬', name: 'MySQL'       },
+  { id: '6', icon: '🎨', name: 'CSS'         },
+  { id: '7', icon: '🌐', name: 'HTML'        },
+]
 
 function Skills() {
-
-  const image = [
-    
-  {
-    id: '1',
-    image: javascript,
-    name: 'Javascript'
-  },
-    {
-      id: '2',
-      image: react,
-      name: 'React.js'
-    },
-    {
-    id: '3',
-    image: python,
-    name: 'Python'
-  },
-  {
-    id: '4',
-    image: django,
-    name: 'Django'
-  },
-  {
-    id: '5',
-    image: mysql,
-    name: 'Mysql'
-  },
-  {
-    id: '6',
-    image:css,
-    name: 'Css'
-  },
-  {
-    id: '7',
-    image: html,
-    name: 'Html'
-  },
-
-
-  ]
   return (
-    <>
-      <section id='skills'>
-      <h1 className='skill-head'>Skills</h1>
-        <div className='skills-div'>
-          {image.map(((image)=>
-           <Card key={image.id} sx={{ maxWidth: 345, padding: 3, margin:5, backgroundColor: '#e9ecef' }}>
-           <CardMedia
-             sx={{ height: 100, width: 112, margin: '7px' }}
-             image={image.image}
-             title="python"
-           />
-           <CardContent>
-             <Typography gutterBottom variant="h5" component="div"
-               sx={{ textAlign: 'center', color: '#111111', fontFamily: 'serif' }}
-             >
-               {image.name}
-             </Typography>
-           </CardContent>
-         </Card>
-          ))}
-         
-        </div>
-      </section>
-    </>
+    <section id="skills">
+      <div className="section-label">What I know</div>
+      <h2 className="section-title">Tech <em>Stack</em></h2>
+
+      <div className="skills-grid">
+        {skills.map(skill => (
+          <div className="skill-card" key={skill.id}>
+            <span className="skill-icon">{skill.icon}</span>
+            <div className="skill-name">{skill.name}</div>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 

@@ -5,7 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import { Footer } from "./components/Footter";
 import Project from "./components/Project";
-
+import './components/Css/global.css'
 
 
 

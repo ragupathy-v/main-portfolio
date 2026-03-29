@@ -1,70 +1,122 @@
-/* font name-- font-family: "Coiny", system-ui;  */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Coiny&family=Knewave&family=Mogra&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-/* font name--   font-family: "Rajdhani", sans-serif  */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Knewave&family=Mogra&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-#home{
-    background-image: linear-gradient(hsla(233, 38%, 91%, 0.503),#fafafa),url('/src/image/header.jpg');
-    background-position: center;
-    background-size: cover; 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   background-repeat:no-repeat ;
-   
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 60px 80px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
 }
-#span{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.hero-grid-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.4;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
 }
-.span-div{
-    margin-top: 40px;
-   text-align: center;
-   
-   
+.hero-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(123,92,245,0.18) 0%, transparent 70%);
+  top: -100px; right: -100px;
+  pointer-events: none;
 }
-
-#up{
-   font-size: 57px;
-   font-weight: bold;
-   color: #444444;
-   
+.hero-glow-2 {
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200,240,96,0.08) 0%, transparent 70%);
+  bottom: 0; left: 0;
+  pointer-events: none;
 }
-#down{
- font-size: 54px; 
- font-weight: bold;
- color:#212429; 
- 
-  
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
 }
-#roll{
-    font-size: 26px;
-    font-family:"Rajdhani", sans-serif ;
-    letter-spacing: 4px;
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 32px;
+  animation: fadeUp 0.8s ease both;
 }
-/* changing the spacing of the text on 400px and below 400px*/
-@media (max-width:400px) {
- #roll{
-    letter-spacing: 1px;
- }
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s ease infinite;
 }
- /*changing the size of the span text on 400px screen size and below 400px*/ 
-@media(max-width:400px){
-    #up{
-        font-size: 49px;
-    }
-    #down{
-        font-size: 48px;
-    }
+.hero-title {
+  font-family: var(--ff-head);
+  font-size: clamp(52px, 8vw, 110px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  animation: fadeUp 0.8s 0.1s ease both;
+  margin-bottom: 12px;
 }
-
-/* changing the hight of the home screen on 400px and below*/
-@media(max-width:400px){
-    #home{
-        height: 80vh;
-    }
+.hero-title .line-dim {
+  color: var(--muted);
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+}
+.hero-title .line-accent {
+  color: var(--accent);
+  display: block;
+}
+.hero-subtitle {
+  font-family: var(--ff-mono);
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 28px 0 48px;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s 0.3s ease both;
+}
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 40px; left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  animation: fadeUp 0.8s 0.5s ease both;
+}
+.scroll-line {
+  width: 40px; height: 1px;
+  background: var(--muted);
+  transform-origin: left;
+  animation: scrollLine 2s ease infinite;
+}
+@media (max-width: 900px) {
+  #home { padding: 100px 24px 60px; }
+  .hero-scroll-hint { left: 24px; }
+}
+@media (max-width: 480px) {
+  .hero-ctas { flex-direction: column; }
 }

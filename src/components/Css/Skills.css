@@ -1,42 +1,51 @@
-
-/* font-family : "Coiny", system-ui;*/
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Coiny&family=Knewave&family=Mogra&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-#skills{
- width: 100vw;
- height: auto;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- background-color: #f8f9fa;
-
+#skills { background: var(--bg); }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin-top: 56px;
 }
-
-.skill-head{
-    color: #1300ff !important;
-   
-    margin-top: 100px;
-    
+.skill-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 24px 20px;
+  text-align: center;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  overflow: hidden;
 }
-.skills-div{
-    width: 90vw;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    margin: 20px auto;
-    justify-content: space-around;
-
+.skill-card::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  transform: scaleX(0);
+  transition: transform var(--transition);
 }
-
-
-
-
-
-
-
-
-
-
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+}
+.skill-card:hover::before { transform: scaleX(1); }
+.skill-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  display: block;
+  filter: grayscale(0.3);
+  transition: filter var(--transition), transform var(--transition);
+}
+.skill-card:hover .skill-icon { filter: none; transform: scale(1.1); }
+.skill-name {
+  font-family: var(--ff-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+.skill-card:hover .skill-name { color: var(--text); }
+@media (max-width: 480px) {
+  .skills-grid { grid-template-columns: repeat(3, 1fr); }
+}
